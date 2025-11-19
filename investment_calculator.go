@@ -30,6 +30,14 @@ func main() {
 	// Print text in a formatted way
 	// values go in order for placeholders
 	// \n is a line break fyi
-	fmt.Printf("Future Value: %v\nFuture Value (adjusted for Inflation): %v", futureValue, futureRealValue)
+
+	/**
+	Printing also lets you use some other values as well
+	AND control the values of the outputs as well.
+
+	Check out the documentation about how GO formats values via fmt package:
+	https://pkg.go.dev/fmt
+	*/
+	fmt.Printf("Future Value: %.2f\nFuture Value (adjusted for Inflation): %.2f", futureValue, futureRealValue)
 
 }
