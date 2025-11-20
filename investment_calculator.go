@@ -38,6 +38,13 @@ func main() {
 	Check out the documentation about how GO formats values via fmt package:
 	https://pkg.go.dev/fmt
 	*/
-	fmt.Printf("Future Value: %.2f\nFuture Value (adjusted for Inflation): %.2f", futureValue, futureRealValue)
+	// fmt.Printf("Future Value: %.2f\nFuture Value (adjusted for Inflation): %.2f", futureValue, futureRealValue)
+
+	// 
+	formattedFV := fmt.Sprintf("Future Value: %.1f\n", futureValue)
+	formattedRFV := fmt.Sprintf("Future Value (adjusted for Inflation): %.1f\n", futureRealValue)
+
+	fmt.Print(formattedFV, formattedRFV)
+
 
 }
